@@ -16,7 +16,7 @@ function Home() {
       axios
         .delete("https://jsonplaceholder.typicode.com/users/" + id)
         .then((res) => {
-          alert(`The user with id  ${id} ,  is deleted successfully`);
+          alert(`The user with id ${id} , is deleted successfully`);
           location.reload("/");
         })
         .catch((err) => console.log(err));
@@ -64,7 +64,7 @@ function Home() {
 
                   <button
                     className="btn btn-sm btn-danger me-2"
-                    onClick={handleDelete}
+                    onClick={() => handleDelete(d.id)}
                   >
                     Delete
                   </button>

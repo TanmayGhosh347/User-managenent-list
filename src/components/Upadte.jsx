@@ -66,7 +66,7 @@ function Upadte() {
           </div>
           <div className="mb-3">
             <label htmlFor="phone" className="form-label">
-              Email:
+              Phone:
             </label>
             <input
               type="text"
